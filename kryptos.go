@@ -1,7 +1,7 @@
 package kryptos
 
 var (
-	ENCRYPT_MAPPING = map[string]string{
+	encryptMapping = map[string]string{
 		"a": "¡",
 		"b": "¢",
 		"c": "£",
@@ -66,12 +66,12 @@ var (
 		"9": "ß",
 	}
 
-	DECRYPT_MAPPING = map[string]string{}
+	decryptMapping = map[string]string{}
 )
 
 func init() {
-	for k, v := range ENCRYPT_MAPPING {
-		DECRYPT_MAPPING[v] = k
+	for k, v := range encryptMapping {
+		decryptMapping[v] = k
 	}
 }
 
@@ -79,7 +79,7 @@ func init() {
 func Encrypt(input string) string {
 	output := ""
 	for _, char := range input {
-		if val, ok := ENCRYPT_MAPPING[string(char)]; ok {
+		if val, ok := encryptMapping[string(char)]; ok {
 			output += val
 		} else {
 			output += string(char)
@@ -92,7 +92,7 @@ func Encrypt(input string) string {
 func Decrypt(input string) string {
 	output := ""
 	for _, char := range input {
-		if val, ok := DECRYPT_MAPPING[string(char)]; ok {
+		if val, ok := decryptMapping[string(char)]; ok {
 			output += val
 		} else {
 			output += string(char)
