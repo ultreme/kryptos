@@ -23,5 +23,5 @@ script:
 - if [ "$RUN_TESTS" ]; then
       go test -v ./...;
       go test -coverprofile=profile.out -v .;
-      goveralls -service=travis-ci -v -coverprofile=profile.out
+      goveralls -service=travis-ci -v -coverprofile=profile.out;
   fi
