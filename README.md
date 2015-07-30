@@ -1,5 +1,6 @@
 # go-kryptos
 
+[![Build Status](https://travis-ci.org/ultreme/go-kryptos.svg)](https://travis-ci.org/ultreme/go-kryptos)
 [![GoDoc](https://godoc.org/github.com/ultreme/go-kryptos?status.svg)](https://godoc.org/github.com/ultreme/go-kryptos)
 
 Encrypt/Decrypt using the awesome [Kryptos](http://www.salutcestcool.com/quatre/kryptos/) algorithm
