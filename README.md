@@ -49,6 +49,10 @@ See [GoDoc](https://godoc.org/ultre.me/kryptos) for more examples
 go get ultre.me/kryptos/...
 ```
 
+## Demo
+
+* http://www.salutcestcool.com/quatre/kryptos/
+
 ## License
 
 MIT
