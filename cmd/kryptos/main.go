@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ultreme/go-kryptos"
+	"ultre.me/kryptos"
 )
 
 var decryptFlag bool
