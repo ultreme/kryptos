@@ -1,4 +1,4 @@
-package kryptos
+package kryptos // import "ultre.me/kryptos"
 
 var (
 	encryptMapping = map[string]string{
